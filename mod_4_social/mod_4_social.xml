@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.5" client="site" method="upgrade">
+    <name>Contact - 4 Social networks</name>
+    <author>Marcelo Cueto</author>
+    <creationDate>July 2016</creationDate>
+    <copyright>Copyright (C)</copyright>
+    <license>GNU/GPL  </license>
+    <authorEmail>marcelo@marcelocueto.cl</authorEmail>
+    <authorUrl>www.marcelocueto.cl</authorUrl>
+    <version>1.0.0</version>
+    <description>
+      Show 4 of your social networks, useful for personal websites
+    </description>
+
+    <files>
+        <filename module="mod_4_social">mod_4_social.php</filename>
+        <folder>tmpl</folder>
+        <filename>index.html</filename>
+        <filename>mod_4_social.xml</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_4_social.ini</language>
+        <language tag="es-ES">es-ES.mod_4_social.ini</language>
+    </languages>
+
+    <config>
+      <fields name="params">
+        <fieldset name="basic">
+          <field
+            name="social_network_name_a"
+            type="textarea"
+            rows="1"
+            cols="10"
+            default= "facebook"
+            label="MOD_4_SOCIAL_FIELD_NAME_A_LABEL"
+            description="MOD_4_SOCIAL_FIELD_NAME_A_DESC"
+          />
+          <field
+            name="social_network_link_a"
+            type="textarea"
+            rows="1"
+            cols="10"
+            default= "http://www.facebook.com/"
+            label="MOD_4_SOCIAL_FIELD_LINK_A_LABEL"
+            description="MOD_4_SOCIAL_FIELD_LINK_A_DESC"
+          />
+
+          <field
+            name="social_network_name_b"
+            type="textarea"
+            rows="1"
+            cols="10"
+            default= "twitter"
+            label="MOD_4_SOCIAL_FIELD_NAME_B_LABEL"
+            description="MOD_4_SOCIAL_FIELD_NAME_B_DESC"
+          />
+          <field
+            name="social_network_link_b"
+            type="textarea"
+            rows="1"
+            cols="10"
+            default= "http://www.twitter.com/"
+            label="MOD_4_SOCIAL_FIELD_LINK_B_LABEL"
+            description="MOD_4_SOCIAL_FIELD_LINK_B_DESC"
+          />
+
+
+          <field
+            name="social_network_name_c"
+            type="textarea"
+            rows="1"
+            cols="10"
+            default= "github"
+            label="MOD_4_SOCIAL_FIELD_NAME_C_LABEL"
+            description="MOD_4_SOCIAL_FIELD_NAME_C_DESC"
+          />
+          <field
+            name="social_network_link_c"
+            type="textarea"
+            rows="1"
+            cols="10"
+            default= "https://github.com/mcueto"
+            label="MOD_4_SOCIAL_FIELD_LINK_C_LABEL"
+            description="MOD_4_SOCIAL_FIELD_LINK_C_DESC"
+          />
+
+          <field
+            name="social_network_name_d"
+            type="textarea"
+            rows="1"
+            cols="10"
+            default= "linkedin"
+            label="MOD_4_SOCIAL_FIELD_NAME_D_LABEL"
+            description="MOD_4_SOCIAL_FIELD_NAME_D_DESC"
+          />
+          <field
+            name="social_network_link_d"
+            type="textarea"
+            rows="1"
+            cols="10"
+            default= "http://www.linkedin.com/"
+            label="MOD_4_SOCIAL_FIELD_LINK_D_LABEL"
+            description="MOD_4_SOCIAL_FIELD_LINK_D_DESC"
+          />
+
+        </fieldset>
+      </fields>
+    </config>
+</extension>
